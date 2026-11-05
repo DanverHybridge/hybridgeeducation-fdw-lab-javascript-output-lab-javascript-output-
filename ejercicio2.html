@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostracion de output en Javascript</title>
+</head>
+
+<body>
+    <h1>Demostracion de output en Javascript</h1>
+
+    <button onclick="alertita()"> Cual es MI nombre? </button>
+    <br>
+    <br>
+    <p id="botoncio"></p>
+    <button onclick="cambiarParrafo()">Aqui para ver la magia de Javascript</button>
+
+    <script>
+        console.log("Este es un mensaje para la consola");
+
+        function alertita() {
+            alert("Mi nombre es Daniel");
+        }
+
+        function cambiarParrafo() {
+            document.getElementById("botoncio").innerHTML = "¡Texto actualizado con Javascript!";
+        }
+    </script>
+</body>
+
+</html>
